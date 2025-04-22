@@ -55,4 +55,19 @@ public class BinarySearchTree <E extends Comparable<E>> {
 
         return true; // Đã xoá thành công
     }
+
+    public TreeNode<E> search(E e) {
+        TreeNode<E> current = (TreeNode<E>) root;
+        while (current != null) {
+            if(e.compareTo(current.val)<0){
+                current = current.left;
+            }else if(e.compareTo(current.val)>0){
+                current = current.right;
+
+            }else {
+                return current;
+            }
+        }
+        return null;
+    }
 }
