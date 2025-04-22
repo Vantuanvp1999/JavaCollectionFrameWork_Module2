@@ -13,5 +13,11 @@ public class BST {
         // In node hiện tại
         System.out.print(node.data + " ");
     }
-
+    void preOrder(TreeNode node) {
+        if(node == null)
+            return;
+        System.out.println(node.data+" ");
+        preOrder(node.left);
+        preOrder(node.right);
+    }
 }
