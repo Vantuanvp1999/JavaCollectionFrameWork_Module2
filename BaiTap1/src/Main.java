@@ -12,5 +12,6 @@ public class Main {
         tree.root.right.right = new TreeNode(42);
         System.out.println("postOrder traversal : ");
         tree.postOrder(tree.root);
+        tree.preOrder(tree.root);
     }
 }
