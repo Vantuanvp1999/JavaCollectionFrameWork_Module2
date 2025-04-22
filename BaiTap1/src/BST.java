@@ -13,4 +13,5 @@ public class BST {
         // In node hiện tại
         System.out.print(node.data + " ");
     }
+
 }
